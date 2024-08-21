@@ -1,0 +1,1 @@
+E:\Perforce\AI_Center\Tools\Python\ai_tools\venv\Scripts\pyinstaller.exe --onefile -w -F --clean -p ./ --distpath ./output/windows --name ai_tool main.py

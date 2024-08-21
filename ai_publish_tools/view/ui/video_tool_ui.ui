@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>视频工具</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="outputvideo_groupBox1">
+      <property name="title">
+       <string>1.输出视频</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="input_pic_lineEdit1">
+         <property name="placeholderText">
+          <string>输入图片的位置</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="wildcard_lineEdit3">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>通配符，例如scene0001.png，则输入scene%04d.png</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="choose_pushButton1">
+         <property name="text">
+          <string>选择</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="run_pushButton1">
+         <property name="text">
+          <string>执行</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QLineEdit" name="output_video_lineEdit2">
+         <property name="placeholderText">
+          <string>输出视频的位置，手动填写位置</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="mergevideo_groupBox2">
+      <property name="title">
+       <string>2.合并视频</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="2" column="0">
+        <widget class="QLineEdit" name="output_video2_lineEdit6">
+         <property name="placeholderText">
+          <string>输出视频的位置，格式同上，手动填写位置</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="input_video2_lineEdit5">
+         <property name="placeholderText">
+          <string>输入第二个视频的位置,格式同上</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="input_video1_lineEdit4">
+         <property name="placeholderText">
+          <string>输入第一个视频的位置,并在末尾添加视频名称。例如：/Users/test.mp4</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="QPushButton" name="run_pushButton2">
+         <property name="text">
+          <string>执行</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QPushButton" name="choose_pushButton2">
+         <property name="text">
+          <string>选择</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QPushButton" name="choose_pushButton3">
+         <property name="text">
+          <string>选择</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="diffpict_groupBox3">
+      <property name="title">
+       <string>3.diff两个文件夹内的图片</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="input_folder_lineEdit8">
+         <property name="placeholderText">
+          <string>输入第二个文件夹的位置</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLineEdit" name="output_pic_lineEdit9">
+         <property name="placeholderText">
+          <string>输出图像位置，手动填写位置</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="run_pushButton3">
+         <property name="text">
+          <string>执行</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="choose_pushButton4">
+         <property name="text">
+          <string>选择</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="choose_pushButton5">
+         <property name="text">
+          <string>选择</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="input_folder_lineEdit7">
+         <property name="placeholderText">
+          <string>输入第一个文件夹的位置</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="avi_groupBox4">
+      <property name="title">
+       <string>4.验证流程，请选择文件夹(如：//ai_center/Retarget/Samples/20240625/)</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="2">
+        <widget class="QPushButton" name="run_pushButton4">
+         <property name="text">
+          <string>执行</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="input_folder_lineEdit10">
+         <property name="placeholderText">
+          <string>输入图片文件夹位置</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="choose_pushButton6">
+         <property name="text">
+          <string>选择</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>37</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
