@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tupleview</class>
+ <widget class="QWidget" name="tupleview">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>657</width>
+    <height>490</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TupleView</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>621</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>配置文件：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="config_path"/>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="config_read_button">
+      <property name="text">
+       <string>读取</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1" colspan="4">
+     <widget class="QLabel" name="data_save_folder">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>配置列表：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>提交标注：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="3">
+     <widget class="QLabel" name="workspace_path">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>工作空间：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="QPushButton" name="select_data_folder">
+      <property name="text">
+       <string>选择</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="label_9">
+      <property name="text">
+       <string>数据存放目录：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>添加数据目录：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="config_select_button">
+      <property name="text">
+       <string>选择</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>添加数据类型：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="add_data_folder"/>
+    </item>
+    <item row="13" column="1" colspan="3">
+     <widget class="QPushButton" name="put_tuple_button">
+      <property name="text">
+       <string>形成三元组并提交</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="comboBox"/>
+    </item>
+    <item row="7" column="3">
+     <widget class="QPushButton" name="add_data_button">
+      <property name="text">
+       <string>添加</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2" colspan="2">
+     <widget class="QComboBox" name="comboBox_2"/>
+    </item>
+    <item row="11" column="3">
+     <widget class="QPushButton" name="look_tuple_button">
+      <property name="text">
+       <string>选择并查看三元组</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1" colspan="2">
+     <widget class="QTreeWidget" name="treeWidget"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
